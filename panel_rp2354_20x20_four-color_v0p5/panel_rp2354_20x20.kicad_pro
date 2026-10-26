@@ -76,7 +76,48 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "courtyards_overlap|52405000|87330395|beb5cbae-d395-48bc-ad8b-7f5e908ca62c|fd07b1df-44e7-4e08-8518-d0d881e9219c",
+          ""
+        ],
+        [
+          "courtyards_overlap|55781360|83126248|b86146e8-addd-4d07-9f89-b94ad8f6c709|fe8eb0ed-b52b-41e0-b77a-2238f20215bf",
+          ""
+        ],
+        [
+          "courtyards_overlap|56204328|84146182|799524ac-676f-416b-ab37-5d337eb316e7|b86146e8-addd-4d07-9f89-b94ad8f6c709",
+          ""
+        ],
+        [
+          "courtyards_overlap|56941848|82900544|1878aab5-1810-4653-86c4-07db0e801120|b86146e8-addd-4d07-9f89-b94ad8f6c709",
+          ""
+        ],
+        [
+          "courtyards_overlap|81316209|66563521|e31ee192-62fe-4182-bf09-0a7fcea40982|fd338c57-09da-46f0-ac2c-0082dff69f56",
+          ""
+        ],
+        [
+          "courtyards_overlap|82051745|65359891|3d10001c-9464-4ba6-84ba-7f07c039924c|e31ee192-62fe-4182-bf09-0a7fcea40982",
+          ""
+        ],
+        [
+          "courtyards_overlap|82573564|66268828|ae83f85f-036d-4f66-a336-7d569d99620e|e31ee192-62fe-4182-bf09-0a7fcea40982",
+          ""
+        ],
+        [
+          "courtyards_overlap|82886735|80770873|a0995d13-8ddb-415f-adc4-a7045afaf87b|b1152ef6-a393-4dac-8f18-385b512eec4b",
+          ""
+        ],
+        [
+          "courtyards_overlap|83199156|81891010|0c594f8d-71b0-4fe8-9a11-15aefd82131f|a0995d13-8ddb-415f-adc4-a7045afaf87b",
+          ""
+        ],
+        [
+          "courtyards_overlap|83948919|80643473|a0995d13-8ddb-415f-adc4-a7045afaf87b|d73619fa-ea77-4ab5-9efe-b910c9dfb337",
+          ""
+        ]
+      ],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
@@ -123,8 +164,8 @@
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
         "silk_edge_clearance": "ignore",
-        "silk_over_copper": "warning",
-        "silk_overlap": "warning",
+        "silk_over_copper": "ignore",
+        "silk_overlap": "ignore",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
@@ -283,7 +324,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": "v0.5.0"
+      "sch_revision": "v0.5.2"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -1363,7 +1404,7 @@
         "uuid": "1e634561-32a0-4ffa-9d4f-e93f355464d5"
       }
     ],
-    "used_designators": "#PWR141-142,J6-7",
+    "used_designators": "#PWR10,#PWR141-143,FID1-6,J6-7",
     "variants": []
   },
   "sheets": [

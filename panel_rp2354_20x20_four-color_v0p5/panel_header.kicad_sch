@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "G6 PBYR 45mm RP2354")
-		(date "2026-10-18")
-		(rev "v0.5.0")
+		(date "2026-10-26")
+		(rev "v0.5.2")
 		(company "Reiserlab @ Janelia")
 	)
 	(lib_symbols

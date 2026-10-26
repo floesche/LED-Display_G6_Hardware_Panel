@@ -6,8 +6,8 @@
 	(paper "User" 431.8 304.8)
 	(title_block
 		(title "G6 PBYR 45mm RP2354")
-		(date "2026-10-18")
-		(rev "v0.5.0")
+		(date "2026-10-26")
+		(rev "v0.5.2")
 		(company "Reiserlab @ Janelia")
 	)
 	(lib_symbols
@@ -28841,7 +28841,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C852485"
+		(property "LCSC Part #" "C852930"
 			(at 66.04 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -32655,7 +32655,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C852485"
+		(property "LCSC Part #" "C852930"
 			(at 279.4 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -40113,7 +40113,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C852485"
+		(property "LCSC Part #" "C852930"
 			(at 208.28 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -46654,7 +46654,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C852485"
+		(property "LCSC Part #" "C852930"
 			(at 351.79 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -67077,7 +67077,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C852485"
+		(property "LCSC Part #" "C852930"
 			(at 137.16 53.34 0)
 			(hide yes)
 			(show_name no)

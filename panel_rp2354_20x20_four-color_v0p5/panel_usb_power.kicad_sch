@@ -6,12 +6,12 @@
 	(paper "A4")
 	(title_block
 		(title "G6 PBYR 45mm RP2354")
-		(date "2026-10-18")
-		(rev "v0.5.0")
+		(date "2026-10-26")
+		(rev "v0.5.2")
 		(company "Reiserlab @ Janelia")
 	)
 	(lib_symbols
-		(symbol "Connector_Generic:Conn_01x04"
+		(symbol "Connector_Generic_MountingPin:Conn_01x04_MountingPin"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -31,14 +31,15 @@
 					)
 				)
 			)
-			(property "Value" "Conn_01x04"
-				(at 0 -7.62 0)
+			(property "Value" "Conn_01x04_MountingPin"
+				(at 1.27 -7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -63,7 +64,7 @@
 					)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Generic connectable mounting pin connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -85,7 +86,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(property "ki_fp_filters" "Connector*:*_1x??-1MP*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -96,7 +97,7 @@
 					)
 				)
 			)
-			(symbol "Conn_01x04_1_1"
+			(symbol "Conn_01x04_MountingPin_1_1"
 				(rectangle
 					(start -1.27 3.81)
 					(end 1.27 -6.35)
@@ -150,6 +151,26 @@
 					)
 					(fill
 						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 -7.112) (xy 1.016 -7.112)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "Mounting"
+					(at 0 -6.731 0)
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
 					)
 				)
 				(pin passive line
@@ -217,6 +238,24 @@
 						)
 					)
 					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -10.16 90)
+					(length 3.048)
+					(name "MountPin"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "MP"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1173,6 +1212,16 @@
 	)
 	(wire
 		(pts
+			(xy 80.01 36.83) (xy 73.66 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "402fabf1-8140-4c6f-ba06-3ea112261dd8")
+	)
+	(wire
+		(pts
 			(xy 200.66 45.72) (xy 203.2 45.72)
 		)
 		(stroke
@@ -1190,6 +1239,16 @@
 			(type default)
 		)
 		(uuid "42ba83f5-df6e-45df-99ba-1000680d33b0")
+	)
+	(wire
+		(pts
+			(xy 73.66 39.37) (xy 73.66 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e8a0ac1-91f0-46ee-afbe-ecaf0aeb4b76")
 	)
 	(wire
 		(pts
@@ -2057,7 +2116,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x04")
+		(lib_id "Connector_Generic_MountingPin:Conn_01x04_MountingPin")
 		(at 73.66 49.53 180)
 		(unit 1)
 		(body_style 1)
@@ -2111,8 +2170,9 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Generic connectable mounting pin connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 73.66 49.53 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2144,10 +2204,91 @@
 		(pin "4"
 			(uuid "ffe36158-1921-4b6a-9db9-95e41db03d5e")
 		)
+		(pin "MP"
+			(uuid "a57bea43-244b-4e74-946d-751056a4f2d0")
+		)
 		(instances
 			(project "panel_rp2354_20x20"
 				(path "/1e634561-32a0-4ffa-9d4f-e93f355464d5/e614504e-e15b-412a-a899-de4ba0827a39"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 80.01 36.83 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8414c016-72d7-428c-ba2c-0219188bb8d5")
+		(property "Reference" "#PWR010"
+			(at 80.01 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 80.01 41.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 80.01 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 80.01 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 80.01 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "358d3942-5d1c-49e6-9e72-3a37e4be9afe")
+		)
+		(instances
+			(project "panel_rp2354_20x20"
+				(path "/1e634561-32a0-4ffa-9d4f-e93f355464d5/e614504e-e15b-412a-a899-de4ba0827a39"
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
